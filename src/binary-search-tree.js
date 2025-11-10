@@ -36,14 +36,21 @@ class BinarySearchTree {
     }
   }
 
-  find(/* data */) {
-    // Remove line below and write your code here
-    throw new NotImplementedError('Not implemented');
+  find( data ) {
+    return findWithin(this.rootNode, data);
+
+    function findWithin(node, value) {
+      if (!node) return null;
+      if (node.data === value) return node;
+
+      return value < node.data
+          ? findWithin(node.left, value)
+          : findWithin(node.right, value);
+    }
   }
 
-  has(/* data */) {
-    // Remove line below and write your code here
-    throw new NotImplementedError('Not implemented');
+  has( data ) {
+    return !!this.find(data);
   }
 
   remove(/* data */) {
