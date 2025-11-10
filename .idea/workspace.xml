@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b847db2d-8e44-46c5-9e1f-863f288eb548" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762737846999</updated>
-      <workItem from="1762737848065" duration="4527000" />
+      <workItem from="1762737848065" duration="7449000" />
     </task>
     <servers />
   </component>

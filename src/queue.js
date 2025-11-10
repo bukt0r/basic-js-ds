@@ -19,10 +19,17 @@ class Queue {
   }
 
   getUnderlyingList() {
-    return this.head;
+    function toPlain(node) {
+      if (!node) return null;
+      return {
+        value: node.value,
+        next: toPlain(node.next)
+      };
+    }
+    return toPlain(this.head);
   }
 
-  enqueue( value ) {
+  enqueue(value) {
     const node = new ListNode(value);
 
     if (!this.head) {
@@ -35,7 +42,7 @@ class Queue {
   }
 
   dequeue() {
-    if (!this.head) return null;
+    if (!this.head) return undefined;
 
     const value = this.head.value;
     this.head = this.head.next;
